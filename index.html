@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Page | Login</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='loginStyle.css'>
+	<script src='login.js'></script>
+</head>
+<body>
+	<div class="BGdesign">
+	<form name="myLogin" id = "myLogin" action="/checkLogin" method="post" accept-charset="utf-8">
+		<fieldset>
+			<legend>login page</legend>
+			<span>Username</span>  <br>
+			<input type="text" name="username" id="username" required>
+			<br>
+			<span>Password</span>  <br>
+			<input type="password" name="password" id="pass" required>
+			<br>
+			<input type="submit" value="Login" class="buttonStyle1">
+			<input type="reset" value="Clear" class="buttonStyle2">
+			<!-- <button onclick="document.location='register.html'" class="buttonStyle3">Register</button> -->
+		</fieldset>
+	</form>
+	</div>
+	<button onclick="document.location='register.html'" class="buttonStyle3">Register</button>
+</body>
+</html>

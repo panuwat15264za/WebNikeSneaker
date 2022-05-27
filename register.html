@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Page | Register</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='regisMain.css'>
+	<script src='register.js'></script>
+</head>
+<body>
+<div class="BGdesign">
+	<form name="myForm" id="myForm" action="/regisDB" method="post" accept-charset="utf-8">
+		<fieldset id="Regis">
+			<legend>Register</legend>
+			<span>* * *require* * *</span> <br>
+			<span id="errormsg"></span> <br>
+			<p1>First name :</p1> 
+			<input type="text" name="firstname" required>
+			<br>
+			<p1>Last name :</p1> 
+			<input type="text" name="lastname" >
+			<br>
+			<p1>Gender :</p1> 
+			<input type="radio" name="gender" value="male" ><p1>Male</p1>
+			<input type="radio" name="gender" value="female" ><p1>Female</p1>
+			<input type="radio" name="gender" value="female" ><p1>Other</p1>
+			<br>
+			<p1>Birthday :</p1> 
+			<input type="date" name="bday" value="" >
+			<br>
+			<p1>Email address :</p1> 
+			<input type="email" name="email" >
+			<br>
+			<p1>Username :</p1> 
+			<input type="text" name="username" >
+			<br>
+			<p1>Password :</p1> 
+			<input type="password" name="password" id="pass" required>
+			<br>
+			<p1>Retype Password :</p1> 
+			<input type="password" name="password1" id="pass1" required>
+			<br>
+			<input type="submit" value="Register" class="buttonStyle1">
+			<input type="reset" value="Reset" class="buttonStyle2">
+		</fieldset>
+	</form>	
+</div>
+</body>
+</html>
